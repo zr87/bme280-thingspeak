@@ -1,0 +1,5 @@
+# Enter Your API key here
+apiKey = 'xxxxxxxxxxxxxxxx'
+
+# URL where we will send the data, Don't change it
+baseURL = 'https://api.thingspeak.com/update?api_key=%s' % apiKey
