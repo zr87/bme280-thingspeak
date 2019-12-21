@@ -27,8 +27,5 @@ try:
 	else:
 		print 'Error'
 
-	# BME280 requires few seconds to give a reading, but lets log every 10 mins (10min = 300) 
-	sleep(600) 
-
 except:
 	break
