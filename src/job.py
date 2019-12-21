@@ -3,6 +3,7 @@ import sys
 import urllib2
 from time import sleep
 from config import baseURL
+import traceback
 
 def BME280_data():
 	# Reading from BME280 and storing the temperature, humidity & pressure
@@ -27,5 +28,5 @@ try:
 	else:
 		print 'Error'
 
-except:
-	break
+except Exception:
+    traceback.print_exc()
