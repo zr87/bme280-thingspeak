@@ -1,7 +1,7 @@
-# Bosch BME280 
+# Bosch BME280 Thingspeak API 
 
-Simple python job script to send sensor data to Thingspeak api.
-Written to run on a Raspberry Pi Zero
+Simple script to send sensor data humidity, tempreature and air pressure to Thingspeak.
+Written and tested on a Raspberry Pi Zero.
 
 ### Get started
 
@@ -10,7 +10,7 @@ The `job.py` script uses the `config.py` script to import the api url to send ge
 0. for wiring the bme280 sensor to a raspberry check this [tutorial](
 https://app.getpocket.com/read/1364761076)
 
-1. rename `config.py.sample` to `config.py` and fill your Thingspeak api key
+1. rename `config.py.sample` to `config.py` and fill your Thingspeak API key
 
 2. add `job.py` to crontab to schedule frequency for sending data (check this [tutorial](https://www.raspberrypi.org/documentation/linux/usage/cron.md) on how to add scripts to the crontab).
 
